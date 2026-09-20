@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Rock064/albedo.jpg" id="1_ad18q"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Rock064/ao.jpg" id="2_unwp0"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Rock064/metallic.png" id="3_sbr4j"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Rock064/normal.jpg" id="4_kvt42"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Rock064/roughness.jpg" id="5_x2nss"]
+
+[resource]
+albedo_texture = ExtResource("1_ad18q")
+metallic = 1.0
+metallic_texture = ExtResource("3_sbr4j")
+roughness_texture = ExtResource("5_x2nss")
+normal_enabled = true
+normal_texture = ExtResource("4_kvt42")
+ao_enabled = true
+ao_texture = ExtResource("2_unwp0")

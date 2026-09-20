@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://cs2nrpfwr3iqf"]
+
+[ext_resource type="Texture2D" uid="uid://dfvwpprom0bkk" path="res://assets/pbr4k/Metal055A/albedo.jpg" id="1_iq7bo"]
+[ext_resource type="Texture2D" uid="uid://3qvdl6iy57qe" path="res://assets/pbr4k/Metal055A/metallic.jpg" id="2_xq1j2"]
+[ext_resource type="Texture2D" uid="uid://cui30ftps4x3b" path="res://assets/pbr4k/Metal055A/normal.jpg" id="3_idma2"]
+[ext_resource type="Texture2D" uid="uid://cd4gxihajbb47" path="res://assets/pbr4k/Metal055A/roughness.jpg" id="4_hrttw"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_iq7bo"]
+file_path = "res://materials/ntcs/Metal055A.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_iq7bo")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Metal055A/albedo.jpg:4096x4096|res://assets/pbr4k/Metal055A/normal.jpg:4096x4096|res://assets/pbr4k/Metal055A/roughness.jpg:4096x4096|res://assets/pbr4k/Metal055A/metallic.jpg:4096x4096||"
+albedo_texture = ExtResource("1_iq7bo")
+metallic = 1.0
+metallic_texture = ExtResource("2_xq1j2")
+roughness_texture = ExtResource("4_hrttw")
+normal_enabled = true
+normal_texture = ExtResource("3_idma2")

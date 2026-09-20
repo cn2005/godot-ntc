@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://dks07ntqx1gow"]
+
+[ext_resource type="Texture2D" uid="uid://ca00v23skssfb" path="res://assets/pbr4k/Marble012/albedo.jpg" id="1_60c3w"]
+[ext_resource type="Texture2D" uid="uid://fnh3v8ebexgq" path="res://assets/pbr4k/Marble012/metallic.png" id="2_fy2dh"]
+[ext_resource type="Texture2D" uid="uid://dljfkoqrh1jha" path="res://assets/pbr4k/Marble012/normal.jpg" id="3_gpopn"]
+[ext_resource type="Texture2D" uid="uid://b2x182maq8mev" path="res://assets/pbr4k/Marble012/roughness.jpg" id="4_gmtgl"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_60c3w"]
+file_path = "res://materials/ntcs/Marble012.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_60c3w")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Marble012/albedo.jpg:4096x4096|res://assets/pbr4k/Marble012/normal.jpg:4096x4096|res://assets/pbr4k/Marble012/roughness.jpg:4096x4096|res://assets/pbr4k/Marble012/metallic.png:4096x4096||"
+albedo_texture = ExtResource("1_60c3w")
+metallic = 1.0
+metallic_texture = ExtResource("2_fy2dh")
+roughness_texture = ExtResource("4_gmtgl")
+normal_enabled = true
+normal_texture = ExtResource("3_gpopn")

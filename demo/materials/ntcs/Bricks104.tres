@@ -1,0 +1,32 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://cfrslyhl8ylpw"]
+
+[ext_resource type="Texture2D" uid="uid://cidy85gvjramg" path="res://assets/pbr4k/Bricks104/albedo.jpg" id="1_ck3e3"]
+[ext_resource type="Texture2D" uid="uid://dlhdihdgwefiv" path="res://assets/pbr4k/Bricks104/ao.jpg" id="2_dbndx"]
+[ext_resource type="Texture2D" uid="uid://btq77ifv6lp1g" path="res://assets/pbr4k/Bricks104/metallic.png" id="3_i06kc"]
+[ext_resource type="Texture2D" uid="uid://xpm6jaqhgu3p" path="res://assets/pbr4k/Bricks104/normal.jpg" id="4_yclni"]
+[ext_resource type="Texture2D" uid="uid://o0oa6cykhogc" path="res://assets/pbr4k/Bricks104/roughness.jpg" id="5_fvxk2"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_ck3e3"]
+file_path = "res://materials/ntcs/Bricks104.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_ck3e3")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Bricks104/albedo.jpg:4096x2048|res://assets/pbr4k/Bricks104/normal.jpg:4096x2048|res://assets/pbr4k/Bricks104/roughness.jpg:4096x2048|res://assets/pbr4k/Bricks104/metallic.png:4096x4096|res://assets/pbr4k/Bricks104/ao.jpg:4096x2048|"
+albedo_texture = ExtResource("1_ck3e3")
+metallic = 1.0
+metallic_texture = ExtResource("3_i06kc")
+roughness_texture = ExtResource("5_fvxk2")
+normal_enabled = true
+normal_texture = ExtResource("4_yclni")
+ao_enabled = true
+ao_texture = ExtResource("2_dbndx")

@@ -1,0 +1,13 @@
+build/
+thirdparty/godot-cpp/
+demo/.godot/
+demo/bin/windows/
+demo/.ntc_cache/
+.cache/
+dist/
+extension_api.json
+*.user
+*.exe
+demo/assets/pbr4k/
+demo/materials/ntcs/*.ntc
+demo/assets/**/*.ntc

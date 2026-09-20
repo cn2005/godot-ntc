@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/WoodFloor051/albedo.jpg" id="1_mhrre"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/WoodFloor051/ao.jpg" id="2_fy705"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/WoodFloor051/metallic.png" id="3_koffv"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/WoodFloor051/normal.jpg" id="4_vvmay"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/WoodFloor051/roughness.jpg" id="5_5uckp"]
+
+[resource]
+albedo_texture = ExtResource("1_mhrre")
+metallic = 1.0
+metallic_texture = ExtResource("3_koffv")
+roughness_texture = ExtResource("5_5uckp")
+normal_enabled = true
+normal_texture = ExtResource("4_vvmay")
+ao_enabled = true
+ao_texture = ExtResource("2_fy705")

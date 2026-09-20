@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Fabric061/albedo.jpg" id="1_7gpgs"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Fabric061/ao.jpg" id="2_gv6w1"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Fabric061/metallic.png" id="3_umqpm"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Fabric061/normal.jpg" id="4_wmmpx"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Fabric061/roughness.jpg" id="5_i3h2c"]
+
+[resource]
+albedo_texture = ExtResource("1_7gpgs")
+metallic = 1.0
+metallic_texture = ExtResource("3_umqpm")
+roughness_texture = ExtResource("5_i3h2c")
+normal_enabled = true
+normal_texture = ExtResource("4_wmmpx")
+ao_enabled = true
+ao_texture = ExtResource("2_gv6w1")

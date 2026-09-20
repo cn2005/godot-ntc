@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Tiles141/albedo.jpg" id="1_hsk50"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Tiles141/metallic.png" id="2_dcrcb"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Tiles141/normal.jpg" id="3_r2tu0"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Tiles141/roughness.jpg" id="4_jjo8m"]
+
+[resource]
+albedo_texture = ExtResource("1_hsk50")
+metallic = 1.0
+metallic_texture = ExtResource("2_dcrcb")
+roughness_texture = ExtResource("4_jjo8m")
+normal_enabled = true
+normal_texture = ExtResource("3_r2tu0")

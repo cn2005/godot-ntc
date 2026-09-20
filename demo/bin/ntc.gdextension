@@ -1,0 +1,20 @@
+[configuration]
+entry_symbol = "ntc_library_init"
+compatibility_minimum = "4.7"
+reloadable = true
+
+[libraries]
+windows.editor.x86_64 = "res://bin/windows/libntc_godot.dll"
+windows.debug.x86_64 = "res://bin/windows/libntc_godot.dll"
+windows.release.x86_64 = "res://bin/windows/libntc_godot.dll"
+
+[dependencies]
+windows.editor.x86_64 = {
+    "res://bin/windows/libntc.dll": ""
+}
+windows.debug.x86_64 = {
+    "res://bin/windows/libntc.dll": ""
+}
+windows.release.x86_64 = {
+    "res://bin/windows/libntc.dll": ""
+}

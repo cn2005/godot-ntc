@@ -1,0 +1,32 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://b5wpq3kyjytum"]
+
+[ext_resource type="Texture2D" uid="uid://b5esxyfl2gy6u" path="res://assets/pbr4k/Rock064/albedo.jpg" id="1_krsty"]
+[ext_resource type="Texture2D" uid="uid://clbovtys7o3qv" path="res://assets/pbr4k/Rock064/ao.jpg" id="2_5olkw"]
+[ext_resource type="Texture2D" uid="uid://2a1nhcbvufyg" path="res://assets/pbr4k/Rock064/metallic.png" id="3_1f2w5"]
+[ext_resource type="Texture2D" uid="uid://pwbs16eola1x" path="res://assets/pbr4k/Rock064/normal.jpg" id="4_bpwm1"]
+[ext_resource type="Texture2D" uid="uid://bmu2rm6frr18t" path="res://assets/pbr4k/Rock064/roughness.jpg" id="5_6hxw6"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_krsty"]
+file_path = "res://materials/ntcs/Rock064.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_krsty")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Rock064/albedo.jpg:4096x4096|res://assets/pbr4k/Rock064/normal.jpg:4096x4096|res://assets/pbr4k/Rock064/roughness.jpg:4096x4096|res://assets/pbr4k/Rock064/metallic.png:4096x4096|res://assets/pbr4k/Rock064/ao.jpg:4096x4096|"
+albedo_texture = ExtResource("1_krsty")
+metallic = 1.0
+metallic_texture = ExtResource("3_1f2w5")
+roughness_texture = ExtResource("5_6hxw6")
+normal_enabled = true
+normal_texture = ExtResource("4_bpwm1")
+ao_enabled = true
+ao_texture = ExtResource("2_5olkw")

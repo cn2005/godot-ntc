@@ -1,0 +1,58 @@
+{
+  "textures": [
+    {
+      "fileName": "AmbientOcclusion.jpg",
+      "name": "AmbientOcclusion",
+      "isSRGB": false,
+      "bcFormat": "BC4",
+      "semantics": {
+        "Occlusion": "R"
+      }
+    },
+    {
+      "fileName": "Color.jpg",
+      "name": "Color",
+      "isSRGB": true,
+      "bcFormat": "BC7",
+      "semantics": {
+        "Albedo": "RGB"
+      }
+    },
+    {
+      "fileName": "Displacement.jpg",
+      "name": "Displacement",
+      "isSRGB": false,
+      "bcFormat": "BC4",
+      "semantics": {
+        "Displacement": "R"
+      }
+    },
+    {
+      "fileName": "Metalness.jpg",
+      "name": "Metalness",
+      "isSRGB": false,
+      "bcFormat": "BC4",
+      "semantics": {
+        "Metalness": "R"
+      }
+    },
+    {
+      "fileName": "NormalDX.jpg",
+      "name": "Normal",
+      "isSRGB": false,
+      "bcFormat": "BC7",
+      "semantics": {
+        "Normal": "RGB"
+      }
+    },
+    {
+      "fileName": "Roughness.jpg",
+      "name": "Roughness",
+      "isSRGB": false,
+      "bcFormat": "BC4",
+      "semantics": {
+        "Roughness": "R"
+      }
+    }
+  ]
+}

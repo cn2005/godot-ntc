@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cgfb6einudips"]
+
+[ext_resource type="Script" uid="uid://cjs62w5wwi0c8" path="res://main.gd" id="1_script"]
+[ext_resource type="Material" uid="uid://bdtny3pxfka1r" path="res://assets/MetalPlates013/new_ntcs_material_3d.tres" id="2_0xm2m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_uh4lo"]
+
+[node name="Main" type="Node3D" unique_id=843465942]
+script = ExtResource("1_script")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1850929584]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0.55, 2.1)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=674533187]
+transform = Transform3D(0.866025, -0.353553, 0.353553, 0, 0.707107, 0.707107, -0.5, -0.612372, 0.612372, 0, 2, 2)
+shadow_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1547595483]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=297237437]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 900.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 16
+text = "Loading NTC..."
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=914025963]
+material_override = ExtResource("2_0xm2m")
+mesh = SubResource("BoxMesh_uh4lo")

@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://bwqo8yar0nk5t"]
+
+[ext_resource type="Texture2D" uid="uid://cpiftl5265ahm" path="res://assets/pbr4k/Tiles141/albedo.jpg" id="1_xfhcy"]
+[ext_resource type="Texture2D" uid="uid://dek721xnl3kb6" path="res://assets/pbr4k/Tiles141/metallic.png" id="2_tjmyw"]
+[ext_resource type="Texture2D" uid="uid://vxrs47uknmmg" path="res://assets/pbr4k/Tiles141/normal.jpg" id="3_hfpso"]
+[ext_resource type="Texture2D" uid="uid://4mvoh1ukluro" path="res://assets/pbr4k/Tiles141/roughness.jpg" id="4_60g3l"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_xfhcy"]
+file_path = "res://materials/ntcs/Tiles141.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_xfhcy")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Tiles141/albedo.jpg:4096x4096|res://assets/pbr4k/Tiles141/normal.jpg:4096x4096|res://assets/pbr4k/Tiles141/roughness.jpg:4096x4096|res://assets/pbr4k/Tiles141/metallic.png:4096x4096||"
+albedo_texture = ExtResource("1_xfhcy")
+metallic = 1.0
+metallic_texture = ExtResource("2_tjmyw")
+roughness_texture = ExtResource("4_60g3l")
+normal_enabled = true
+normal_texture = ExtResource("3_hfpso")

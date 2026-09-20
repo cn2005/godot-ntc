@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Marble012/albedo.jpg" id="1_iyj1g"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Marble012/metallic.png" id="2_o08le"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Marble012/normal.jpg" id="3_12g15"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Marble012/roughness.jpg" id="4_c5luy"]
+
+[resource]
+albedo_texture = ExtResource("1_iyj1g")
+metallic = 1.0
+metallic_texture = ExtResource("2_o08le")
+roughness_texture = ExtResource("4_c5luy")
+normal_enabled = true
+normal_texture = ExtResource("3_12g15")

@@ -1,0 +1,249 @@
+[gd_scene format=3 uid="uid://dp51b7e0t57mm"]
+
+[ext_resource type="Script" uid="uid://dygtnkx7kqu7l" path="res://tools/compare_runtime.gd" id="1_script"]
+[ext_resource type="Material" path="res://materials/standard/Metal063.tres" id="mat_0"]
+[ext_resource type="Material" path="res://materials/standard/CorrugatedSteel009.tres" id="mat_1"]
+[ext_resource type="Material" path="res://materials/standard/Metal055A.tres" id="mat_2"]
+[ext_resource type="Material" path="res://materials/standard/Metal046B.tres" id="mat_3"]
+[ext_resource type="Material" path="res://materials/standard/Wood095.tres" id="mat_4"]
+[ext_resource type="Material" path="res://materials/standard/WoodFloor051.tres" id="mat_5"]
+[ext_resource type="Material" path="res://materials/standard/Rock064.tres" id="mat_6"]
+[ext_resource type="Material" path="res://materials/standard/Bricks104.tres" id="mat_7"]
+[ext_resource type="Material" path="res://materials/standard/Concrete034.tres" id="mat_8"]
+[ext_resource type="Material" path="res://materials/standard/Tiles141.tres" id="mat_9"]
+[ext_resource type="Material" path="res://materials/standard/Marble012.tres" id="mat_10"]
+[ext_resource type="Material" path="res://materials/standard/Asphalt033.tres" id="mat_11"]
+[ext_resource type="Material" path="res://materials/standard/PavingStones151.tres" id="mat_12"]
+[ext_resource type="Material" path="res://materials/standard/Leather037.tres" id="mat_13"]
+[ext_resource type="Material" path="res://materials/standard/Fabric061.tres" id="mat_14"]
+[ext_resource type="Material" path="res://materials/standard/Onyx015.tres" id="mat_15"]
+
+[sub_resource type="Environment" id="Env"]
+background_mode = 1
+background_color = Color(0.08, 0.085, 0.1, 1)
+ambient_light_source = 1
+ambient_light_color = Color(0.35, 0.37, 0.4, 1)
+ambient_light_energy = 0.45
+tonemap_mode = 3
+
+[sub_resource type="SphereMesh" id="Sphere"]
+radius = 0.72
+height = 1.44
+radial_segments = 48
+
+[node name="CompareStandard" type="Node3D" unique_id=551049207]
+script = ExtResource("1_script")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=596208155]
+transform = Transform3D(0.99939084, 0.023653505, -0.02566099, 0, 0.73528254, 0.67776066, 0.034899496, -0.6773478, 0.7348346, 3.1265652, 3.4157119, 2.1270905)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1194433621]
+transform = Transform3D(0.81, -0.4, 0.42, 0, 0.74, 0.67, -0.58, -0.54, 0.6, 0, 4, 2)
+light_energy = 1.35
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=777333945]
+environment = SubResource("Env")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=664002864]
+
+[node name="Label" type="Label" parent="HUD" unique_id=270948729]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 1100.0
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 16
+text = "Loading..."
+
+[node name="Sphere_00" type="MeshInstance3D" parent="." unique_id=1695856926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72, 0)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_0")
+
+[node name="Name" type="Label3D" parent="Sphere_00" unique_id=297777639]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Metal063"
+font_size = 48
+
+[node name="Sphere_01" type="MeshInstance3D" parent="." unique_id=938205918]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0.72, 0)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_1")
+
+[node name="Name" type="Label3D" parent="Sphere_01" unique_id=2031534340]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "CorrugatedSteel009"
+font_size = 48
+
+[node name="Sphere_02" type="MeshInstance3D" parent="." unique_id=48658086]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0.72, 0)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_2")
+
+[node name="Name" type="Label3D" parent="Sphere_02" unique_id=1441713472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Metal055A"
+font_size = 48
+
+[node name="Sphere_03" type="MeshInstance3D" parent="." unique_id=542956781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.72, 0)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_3")
+
+[node name="Name" type="Label3D" parent="Sphere_03" unique_id=355562740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Metal046B"
+font_size = 48
+
+[node name="Sphere_04" type="MeshInstance3D" parent="." unique_id=1354737154]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72, -2.15)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_4")
+
+[node name="Name" type="Label3D" parent="Sphere_04" unique_id=1141878011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Wood095"
+font_size = 48
+
+[node name="Sphere_05" type="MeshInstance3D" parent="." unique_id=1214117867]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0.72, -2.15)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_5")
+
+[node name="Name" type="Label3D" parent="Sphere_05" unique_id=828695696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "WoodFloor051"
+font_size = 48
+
+[node name="Sphere_06" type="MeshInstance3D" parent="." unique_id=1078125320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0.72, -2.15)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_6")
+
+[node name="Name" type="Label3D" parent="Sphere_06" unique_id=1681991163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Rock064"
+font_size = 48
+
+[node name="Sphere_07" type="MeshInstance3D" parent="." unique_id=918960431]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.72, -2.15)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_7")
+
+[node name="Name" type="Label3D" parent="Sphere_07" unique_id=2084149473]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Bricks104"
+font_size = 48
+
+[node name="Sphere_08" type="MeshInstance3D" parent="." unique_id=758166076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72, -4.3)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_8")
+
+[node name="Name" type="Label3D" parent="Sphere_08" unique_id=1957736217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Concrete034"
+font_size = 48
+
+[node name="Sphere_09" type="MeshInstance3D" parent="." unique_id=1953689653]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0.72, -4.3)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_9")
+
+[node name="Name" type="Label3D" parent="Sphere_09" unique_id=1629642357]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Tiles141"
+font_size = 48
+
+[node name="Sphere_10" type="MeshInstance3D" parent="." unique_id=848193839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0.72, -4.3)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_10")
+
+[node name="Name" type="Label3D" parent="Sphere_10" unique_id=1280901572]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Marble012"
+font_size = 48
+
+[node name="Sphere_11" type="MeshInstance3D" parent="." unique_id=213619987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.72, -4.3)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_11")
+
+[node name="Name" type="Label3D" parent="Sphere_11" unique_id=1037283282]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Asphalt033"
+font_size = 48
+
+[node name="Sphere_12" type="MeshInstance3D" parent="." unique_id=875709402]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72, -6.45)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_12")
+
+[node name="Name" type="Label3D" parent="Sphere_12" unique_id=511960242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "PavingStones151"
+font_size = 48
+
+[node name="Sphere_13" type="MeshInstance3D" parent="." unique_id=801736393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.15, 0.72, -6.45)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_13")
+
+[node name="Name" type="Label3D" parent="Sphere_13" unique_id=1727280330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Leather037"
+font_size = 48
+
+[node name="Sphere_14" type="MeshInstance3D" parent="." unique_id=1173442592]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0.72, -6.45)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_14")
+
+[node name="Name" type="Label3D" parent="Sphere_14" unique_id=1087118174]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Fabric061"
+font_size = 48
+
+[node name="Sphere_15" type="MeshInstance3D" parent="." unique_id=593779293]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.45, 0.72, -6.45)
+mesh = SubResource("Sphere")
+surface_material_override/0 = ExtResource("mat_15")
+
+[node name="Name" type="Label3D" parent="Sphere_15" unique_id=36389803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.95, 0)
+pixel_size = 0.004
+billboard = 1
+text = "Onyx015"
+font_size = 48

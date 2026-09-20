@@ -1,0 +1,32 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://doggla1pr5432"]
+
+[ext_resource type="Texture2D" uid="uid://bwp887mybs26s" path="res://assets/pbr4k/PavingStones151/albedo.jpg" id="1_2qyov"]
+[ext_resource type="Texture2D" uid="uid://dw0efn2xeqm36" path="res://assets/pbr4k/PavingStones151/ao.jpg" id="2_23i5u"]
+[ext_resource type="Texture2D" uid="uid://crqbf8vi2v3re" path="res://assets/pbr4k/PavingStones151/metallic.png" id="3_v3ie0"]
+[ext_resource type="Texture2D" uid="uid://dx5qxyt0dolgv" path="res://assets/pbr4k/PavingStones151/normal.jpg" id="4_51m6o"]
+[ext_resource type="Texture2D" uid="uid://c6e4ilakaktep" path="res://assets/pbr4k/PavingStones151/roughness.jpg" id="5_e6rul"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_2qyov"]
+file_path = "res://materials/ntcs/PavingStones151.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_2qyov")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/PavingStones151/albedo.jpg:4096x4096|res://assets/pbr4k/PavingStones151/normal.jpg:4096x4096|res://assets/pbr4k/PavingStones151/roughness.jpg:4096x4096|res://assets/pbr4k/PavingStones151/metallic.png:4096x4096|res://assets/pbr4k/PavingStones151/ao.jpg:4096x4096|"
+albedo_texture = ExtResource("1_2qyov")
+metallic = 1.0
+metallic_texture = ExtResource("3_v3ie0")
+roughness_texture = ExtResource("5_e6rul")
+normal_enabled = true
+normal_texture = ExtResource("4_51m6o")
+ao_enabled = true
+ao_texture = ExtResource("2_23i5u")

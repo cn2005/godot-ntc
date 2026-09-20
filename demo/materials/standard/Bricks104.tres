@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Bricks104/albedo.jpg" id="1_23lbc"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Bricks104/ao.jpg" id="2_xp4kr"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Bricks104/metallic.png" id="3_4d3cg"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Bricks104/normal.jpg" id="4_7k564"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Bricks104/roughness.jpg" id="5_0u8bi"]
+
+[resource]
+albedo_texture = ExtResource("1_23lbc")
+metallic = 1.0
+metallic_texture = ExtResource("3_4d3cg")
+roughness_texture = ExtResource("5_0u8bi")
+normal_enabled = true
+normal_texture = ExtResource("4_7k564")
+ao_enabled = true
+ao_texture = ExtResource("2_xp4kr")

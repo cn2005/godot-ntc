@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/CorrugatedSteel009/albedo.jpg" id="1_myl6p"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/CorrugatedSteel009/ao.jpg" id="2_e1nb0"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/CorrugatedSteel009/metallic.jpg" id="3_hp3xm"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/CorrugatedSteel009/normal.jpg" id="4_mxv3t"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/CorrugatedSteel009/roughness.jpg" id="5_ijdc1"]
+
+[resource]
+albedo_texture = ExtResource("1_myl6p")
+metallic = 1.0
+metallic_texture = ExtResource("3_hp3xm")
+roughness_texture = ExtResource("5_ijdc1")
+normal_enabled = true
+normal_texture = ExtResource("4_mxv3t")
+ao_enabled = true
+ao_texture = ExtResource("2_e1nb0")

@@ -1,0 +1,32 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://32wv7owww552"]
+
+[ext_resource type="Texture2D" uid="uid://b16222ki7nka7" path="res://assets/pbr4k/WoodFloor051/albedo.jpg" id="1_sqlbk"]
+[ext_resource type="Texture2D" uid="uid://gccggoba8vt8" path="res://assets/pbr4k/WoodFloor051/ao.jpg" id="2_8krje"]
+[ext_resource type="Texture2D" uid="uid://bwyhwx5um13u0" path="res://assets/pbr4k/WoodFloor051/metallic.png" id="3_45o3y"]
+[ext_resource type="Texture2D" uid="uid://bt3ualkk51jqr" path="res://assets/pbr4k/WoodFloor051/normal.jpg" id="4_27ckj"]
+[ext_resource type="Texture2D" uid="uid://cpvtlvr6lbqyt" path="res://assets/pbr4k/WoodFloor051/roughness.jpg" id="5_7ucxo"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_sqlbk"]
+file_path = "res://materials/ntcs/WoodFloor051.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_sqlbk")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/WoodFloor051/albedo.jpg:4096x4096|res://assets/pbr4k/WoodFloor051/normal.jpg:4096x4096|res://assets/pbr4k/WoodFloor051/roughness.jpg:4096x4096|res://assets/pbr4k/WoodFloor051/metallic.png:4096x4096|res://assets/pbr4k/WoodFloor051/ao.jpg:4096x4096|"
+albedo_texture = ExtResource("1_sqlbk")
+metallic = 1.0
+metallic_texture = ExtResource("3_45o3y")
+roughness_texture = ExtResource("5_7ucxo")
+normal_enabled = true
+normal_texture = ExtResource("4_27ckj")
+ao_enabled = true
+ao_texture = ExtResource("2_8krje")

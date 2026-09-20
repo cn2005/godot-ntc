@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://dd568uicrr2h"]
+
+[ext_resource type="Texture2D" uid="uid://spf7gvwvxeyj" path="res://assets/pbr4k/Wood095/albedo.jpg" id="1_v0uj4"]
+[ext_resource type="Texture2D" uid="uid://cqsevpxwuvh8h" path="res://assets/pbr4k/Wood095/metallic.png" id="2_ogsev"]
+[ext_resource type="Texture2D" uid="uid://caevswcnkkqgt" path="res://assets/pbr4k/Wood095/normal.jpg" id="3_eactd"]
+[ext_resource type="Texture2D" uid="uid://cg601ifsoadof" path="res://assets/pbr4k/Wood095/roughness.jpg" id="4_306iq"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_v0uj4"]
+file_path = "res://materials/ntcs/Wood095.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_v0uj4")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Wood095/albedo.jpg:4096x2048|res://assets/pbr4k/Wood095/normal.jpg:4096x2048|res://assets/pbr4k/Wood095/roughness.jpg:4096x2048|res://assets/pbr4k/Wood095/metallic.png:4096x4096||"
+albedo_texture = ExtResource("1_v0uj4")
+metallic = 1.0
+metallic_texture = ExtResource("2_ogsev")
+roughness_texture = ExtResource("4_306iq")
+normal_enabled = true
+normal_texture = ExtResource("3_eactd")

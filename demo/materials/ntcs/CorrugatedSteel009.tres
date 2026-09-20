@@ -1,0 +1,32 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://ho2w57day1f6"]
+
+[ext_resource type="Texture2D" uid="uid://lnfxnbjju1hm" path="res://assets/pbr4k/CorrugatedSteel009/albedo.jpg" id="1_tlrdv"]
+[ext_resource type="Texture2D" uid="uid://bm36atb7kx0kx" path="res://assets/pbr4k/CorrugatedSteel009/ao.jpg" id="2_y3wh6"]
+[ext_resource type="Texture2D" uid="uid://belxtwtxop3rp" path="res://assets/pbr4k/CorrugatedSteel009/metallic.jpg" id="3_c4ua5"]
+[ext_resource type="Texture2D" uid="uid://38kodirokbh0" path="res://assets/pbr4k/CorrugatedSteel009/normal.jpg" id="4_wv6mm"]
+[ext_resource type="Texture2D" uid="uid://b4q6qg7osjqq6" path="res://assets/pbr4k/CorrugatedSteel009/roughness.jpg" id="5_2tlgg"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_tlrdv"]
+file_path = "res://materials/ntcs/CorrugatedSteel009.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_tlrdv")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/CorrugatedSteel009/albedo.jpg:4096x2048|res://assets/pbr4k/CorrugatedSteel009/normal.jpg:4096x2048|res://assets/pbr4k/CorrugatedSteel009/roughness.jpg:4096x2048|res://assets/pbr4k/CorrugatedSteel009/metallic.jpg:4096x2048|res://assets/pbr4k/CorrugatedSteel009/ao.jpg:4096x2048|"
+albedo_texture = ExtResource("1_tlrdv")
+metallic = 1.0
+metallic_texture = ExtResource("3_c4ua5")
+roughness_texture = ExtResource("5_2tlgg")
+normal_enabled = true
+normal_texture = ExtResource("4_wv6mm")
+ao_enabled = true
+ao_texture = ExtResource("2_y3wh6")

@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://den2sea0kbgh"]
+
+[ext_resource type="Texture2D" uid="uid://bkosqgbsgnld1" path="res://assets/pbr4k/Leather037/albedo.jpg" id="1_2t21x"]
+[ext_resource type="Texture2D" uid="uid://ch43iv1s34ybn" path="res://assets/pbr4k/Leather037/metallic.png" id="2_wyx74"]
+[ext_resource type="Texture2D" uid="uid://f5e5v5htdw0r" path="res://assets/pbr4k/Leather037/normal.jpg" id="3_740xv"]
+[ext_resource type="Texture2D" uid="uid://den5da3bgj123" path="res://assets/pbr4k/Leather037/roughness.jpg" id="4_psefg"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_2t21x"]
+file_path = "res://materials/ntcs/Leather037.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_2t21x")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Leather037/albedo.jpg:4096x4096|res://assets/pbr4k/Leather037/normal.jpg:4096x4096|res://assets/pbr4k/Leather037/roughness.jpg:4096x4096|res://assets/pbr4k/Leather037/metallic.png:4096x4096||"
+albedo_texture = ExtResource("1_2t21x")
+metallic = 1.0
+metallic_texture = ExtResource("2_wyx74")
+roughness_texture = ExtResource("4_psefg")
+normal_enabled = true
+normal_texture = ExtResource("3_740xv")

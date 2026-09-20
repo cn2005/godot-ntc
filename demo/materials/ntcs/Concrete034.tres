@@ -1,0 +1,29 @@
+[gd_resource type="NTCSMaterial3D" format=3 uid="uid://bvhh563cced4p"]
+
+[ext_resource type="Texture2D" uid="uid://0br4p67kvuov" path="res://assets/pbr4k/Concrete034/albedo.jpg" id="1_pwmk2"]
+[ext_resource type="Texture2D" uid="uid://dku87do65ssc0" path="res://assets/pbr4k/Concrete034/metallic.png" id="2_ttcta"]
+[ext_resource type="Texture2D" uid="uid://dwo0yonfnpxph" path="res://assets/pbr4k/Concrete034/normal.jpg" id="3_r18f1"]
+[ext_resource type="Texture2D" uid="uid://bxhvho1r6ea3y" path="res://assets/pbr4k/Concrete034/roughness.jpg" id="4_3p0dh"]
+
+[sub_resource type="NTCTextureSet" id="NTCTextureSet_pwmk2"]
+file_path = "res://materials/ntcs/Concrete034.ntc"
+semantic_map = {
+"albedo": "albedo",
+"ao": "ao",
+"metallic": "metallic",
+"normal": "normal",
+"roughness": "roughness"
+}
+bits_per_pixel = 5.0
+
+[resource]
+ntc_mode = 1
+ntc_texture_set = SubResource("NTCTextureSet_pwmk2")
+ntc_training_steps = 2000
+ntc_source_signature = "5.0|2000|res://assets/pbr4k/Concrete034/albedo.jpg:4096x2048|res://assets/pbr4k/Concrete034/normal.jpg:4096x2048|res://assets/pbr4k/Concrete034/roughness.jpg:4096x2048|res://assets/pbr4k/Concrete034/metallic.png:4096x4096||"
+albedo_texture = ExtResource("1_pwmk2")
+metallic = 1.0
+metallic_texture = ExtResource("2_ttcta")
+roughness_texture = ExtResource("4_3p0dh")
+normal_enabled = true
+normal_texture = ExtResource("3_r18f1")

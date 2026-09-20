@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Metal055A/albedo.jpg" id="1_mmt0n"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Metal055A/metallic.jpg" id="2_dudd2"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Metal055A/normal.jpg" id="3_0lct2"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Metal055A/roughness.jpg" id="4_b8wbv"]
+
+[resource]
+albedo_texture = ExtResource("1_mmt0n")
+metallic = 1.0
+metallic_texture = ExtResource("2_dudd2")
+roughness_texture = ExtResource("4_b8wbv")
+normal_enabled = true
+normal_texture = ExtResource("3_0lct2")

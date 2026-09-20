@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Concrete034/albedo.jpg" id="1_muk5x"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Concrete034/metallic.png" id="2_gow6t"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Concrete034/normal.jpg" id="3_1mbsa"]
+[ext_resource type="Texture2D" path="res://assets/pbr4k/Concrete034/roughness.jpg" id="4_litxr"]
+
+[resource]
+albedo_texture = ExtResource("1_muk5x")
+metallic = 1.0
+metallic_texture = ExtResource("2_gow6t")
+roughness_texture = ExtResource("4_litxr")
+normal_enabled = true
+normal_texture = ExtResource("3_1mbsa")
