@@ -15,7 +15,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(VulkanHeaders)
 
-set(NTC_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/..")
+set(NTC_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/.." CACHE PATH "NVIDIA RTX NTC SDK root (libraries/RTXNTC-Library and bin/windows-x64)")
 set(LIBNTC_LIB "${NTC_ROOT}/bin/windows-x64/libntc.lib")
 set(LIBNTC_DLL "${NTC_ROOT}/bin/windows-x64/libntc.dll")
 

@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.dll binary
+*.lib binary
+*.exe binary
+*.ntc binary
+*.uid text eol=lf
