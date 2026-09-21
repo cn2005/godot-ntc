@@ -7,3 +7,17 @@
 *.exe binary
 *.ntc binary
 *.uid text eol=lf
+
+# Keep GitHub's generated source archives to what is needed to build and install:
+# design notes, demo content and repo-only files are excluded. They stay in the
+# repository (and raw.githubusercontent links keep working), they are just not
+# part of a download.
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/icon.png export-ignore
+/docs export-ignore
+/media export-ignore
+/demo/assets export-ignore
+/demo/materials export-ignore
+/demo/scenes export-ignore
+/demo/tools export-ignore

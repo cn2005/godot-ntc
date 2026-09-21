@@ -5,6 +5,21 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-09-21
+
+Documentation and packaging only. The extension binaries are unchanged from 0.1.0.
+
+### Changed
+
+- Rewrote the README: how the editor and runtime halves differ, scope and costs,
+  channel packing and mip rules, export preset requirements, full API reference,
+  and a troubleshooting table.
+- The release ZIP now installs only `addons/ntc` and `bin`. Licence and notice
+  files moved inside `addons/ntc`, so unzipping over a project can no longer
+  overwrite a root `README.md`, `LICENSE`, or `NOTICE.md`.
+- GitHub source archives exclude design docs, demo content, and repo-only files
+  (~17 MB to ~0.2 MB). Building from an archive is unaffected.
+
 ## [0.1.0] - 2026-09-21
 
 First public release. Scope is **inference on load only** (architecture L1 / A1).

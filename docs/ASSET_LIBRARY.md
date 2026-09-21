@@ -18,11 +18,11 @@ account. This repository cannot submit on your behalf without that login.
 | Asset Name | NTC On Load |
 | Category | Addons → 3D Tools |
 | Godot version | 4.7 |
-| Version | 0.1.0 |
+| Version | 0.1.1 |
 | Repository host | Custom |
 | Repository URL | https://github.com/cn2005/godot-ntc |
 | Issues URL | https://github.com/cn2005/godot-ntc/issues |
-| Download Commit / URL | `https://github.com/cn2005/godot-ntc/releases/download/v0.1.0/NTC-OnLoad-0.1.0-windows.zip` |
+| Download Commit / URL | `https://github.com/cn2005/godot-ntc/releases/download/v0.1.1/NTC-OnLoad-0.1.1-windows.zip` |
 | Icon URL | https://raw.githubusercontent.com/cn2005/godot-ntc/master/icon.png |
 | License | MIT |
 | Preview 1 | Image, https://raw.githubusercontent.com/cn2005/godot-ntc/master/media/preview-materials.png |
